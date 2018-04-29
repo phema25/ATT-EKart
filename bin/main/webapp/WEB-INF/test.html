@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style type="text/css">
+#menu {
+    width: 550px;
+    height: 35px;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    /*text-shadow: 3px 2px 3px #333333;*/
+    background-color: #8AD9FF;
+        border-radius: 8px;
+}
+
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+#menu li { 
+display: inline; 
+padding: 20px; 
+}
+
+#menu a {
+    text-decoration: none;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+}
+
+#myhide {
+diplay : none;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#update").click(function() {
+  //  $("#myhide").css({'display':'block'});
+	 $("#myhide").show();
+  
+});
+});
+
+</script>
+
+
+</head>
+<body>
+<!-- <button id="update" value ="click me!">Click Me!</button>-->
+
+<nav>
+  <ul>
+    <li><a href="#">Navigation</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Links</a></li>
+  </ul>
+</nav>
+<img alt="AT&T logo" src="ATT5.png" >
+<div id="menu">
+<ul>
+<li><a href="addInv.html">Home</a></li>
+<li><a href="#!" id="update">About us</a></li>
+<li><a href="deleteInv.html">Services</a></li>
+<!-- <li><a href="listInv.html">Contact Us</a></li>-->
+</ul>
+</div>
+
+
+<img alt="Laptop" src="mac1.jpg" width="200" height="200">
+<div id="myhide" hidden>
+<form  id="updateProd">
+     Enter the current Product ID to be updated:
+    <input type="text" id="old_id" required/> <br> 
+    <p>Enter the details to be updated: </p><br>
+     ProductID: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" id="new_id" required/> <br> <br>
+     Product Name: &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" id="name" required/> <br> <br>
+     Product Description: <input type="text" id="desc" required/> <br> <br>
+        
+     <input type="submit" value="Update"/> &nbsp; &nbsp; 
+     <input type="reset"  name="Reset">
+ </form>
+</div>
+</body>
+</html>
